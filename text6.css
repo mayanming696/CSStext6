@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+    font-family: "heiti", Arial, Helvetica, sans-serif;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+.body {
+
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #5fc0cd;
+    z-index: 1;
+}
+
+header > div {
+    margin: 0 auto;
+}
+
+header div button:nth-child(1){
+    background-color: #55a8b3;
+    border:none;
+	
+	
+}
+header div button:focus{
+	 outline: 0;
+	outline:none;
+	
+}
+header div button:nth-child(2){
+    background-color: #FFFFFF;
+
+}
+
+header .location1 {
+    width: 42px;
+    height: 44px;
+    display: inline;
+    background-position: -10px -332px;
+}
+
+main {
+    padding-top: 44px;
+    width: 100%;
+}
+
+main .select {
+    text-align: center;
+    border-bottom: 1px solid #AAA;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+main select .dropdown-toggle {
+    background: #FFFFFF;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: .375rem;
+}
+
+main select .dropdown-menu{
+    min-width: 100%;
+    padding:0;
+}
+
+
+main ul {
+    padding-left: 0;
+}
+
+main ul li {
+    list-style: none;
+    border-bottom: 1px solid #AAA;
+}
+
+main ul li i {
+    background-size: 4rem auto;
+}
+
+main ul li .item-header {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+   
+    color: #AAA;
+}
+
+main ul li .item-header i {
+    display: inline;
+    float: left;
+    margin: 0.3rem 0.5rem;
+}
+main ul li .item-header p {
+    margin-bottom: 0;
+}
+
+main ul li .item-main {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    line-height: 2rem;
+    margin:0 0;
+}
+
+main ul li .item-main > p {
+    display: inline-block;
+    /*padding-left: 2.7rem;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0 0;
+    font-size: 1.35rem;
+}
+
+main ul li .item-main > p:hover {
+    overflow: visible;
+    text-overflow: inherit;
+}
+
+main ul li .item-main .money {
+    float: right;
+    color: #FF0000;
+    font-size: 1.35rem;
+}
+
+main ul li .item-main .money p {
+    width: 9rem;
+    margin:0 0;
+}
+
+main ul li .item-main .money a {
+    display: inline-block;
+    float: right;
+    margin: 0 .5rem;
+}
+
+
+#last{
+	margin-bottom:5.5rem;
+}
+main ul li .item-footer {
+    margin:0 0;
+    color: #AAA;
+}
+
+main ul li .item-footer i {
+    float: left;
+    margin: 0.1rem 0.7rem 0.1rem 0.7rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    height: 5.5rem;
+    background-color: #F8FAFB;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 7px 0 0 0;
+    width: 5rem;
+    color: #5FC0CD;
+    background-color: #F8FAFB;
+	outline: 0;
+	
+}
+button:focus{
+
+    outline: 0;
+
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    border: solid 1px #5FC0CD;
+    border-radius: 50%;
+    background-color: #5FC0CD;
+    padding: 1rem;
+	outline: 0;
+	
+}
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 7px 0 0 0;
+     width: 5rem;
+    color: #999999;
+    background-color: #F8FAFB;
+	outline: 0;
+	
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+		
+		.bgLocation{
+			width:42px;
+			height: 44px;
+			background: url(css_sprites.png)-10px -10px;
+			transform: scale(0.5);
+		}
+		
+				.bg-enter{
+			 width: 19px;
+			height: 33px;
+   			 background: url(css_sprites.png)-138px -10px;
+			transform: scale(0.5);
+		}
+		.bg-calendar{
+			 width: 24px; height: 24px;
+    		background: url(css_sprites.png) -177px -10px;
+			transform: scale(0.5);
+		}
+		.bg-location2{
+			 width: 19px; height: 23px;
+   				 background: url(css_sprites.png) -177px -54px;
+			transform: scale(0.5);
+		}
+		.bg-home {
+   					 width: 46px; height: 40px;
+    				background: url(css_sprites.png) -72px -10px;
+			transform: scale(0.7);
+}
+		.bg-Write {
+    				width: 40px; height: 41px;
+    				background: url(css_sprites.png) -72px -74px;
+			transform: scale(0.7);
+}
+		.bg-mine{
+			width: 42px; height: 41px;
+    		background: url(css_sprites.png) -10px -74px;
+			transform: scale(0.7);
+		
+		}
